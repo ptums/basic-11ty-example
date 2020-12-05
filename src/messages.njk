@@ -1,0 +1,15 @@
+---
+title: List of available messages on refresh
+layout: base.njk
+---
+
+<div class="my-6">
+  <h1 class="text-3xl font-extrabold">List of available messages...</h1>
+  <ul class="mt-3">
+    {% for i in messages %}
+    <li class="mb-3 text-2xl">
+      ...{{ i.message }}...
+    </li>
+    {% endfor %}
+  </ul>
+</div>
