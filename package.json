@@ -1,0 +1,19 @@
+{
+  "name": "3-build-with-ssg",
+  "version": "1.0.0",
+  "description": "They make use of Server-side rendering: (build time) to make the pages before hand.",
+  "main": "vibe.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Peter T",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.14",
+    "tailwindcss": "^2.0.1"
+  }
+}
