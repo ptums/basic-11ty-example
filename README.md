@@ -23,3 +23,12 @@ Choose your static-site generator based on:
 * Nothing you don't ask for (doesn't bundle any extra JS)
 * JS all the way down (built and installed using JS)
 
+
+## Building with data from an API
+
+Data Sources => Build Time (pulls data from the source and integrates into the pages) => Then templates,assets, and data from the source and fully created and hosted on the CDN
+
+1. Use data in the SSG
+2. Request data from an API
+3. Get data in Dev and in our deployments
+

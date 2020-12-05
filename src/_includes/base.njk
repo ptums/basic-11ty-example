@@ -8,14 +8,19 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <header>
-      <a href="/">
-        Home
-      </a>
-      <a href="/about">
-        About
-      </a>
-    </header>
-    {{ content | safe }}
+
+    <div class="max-w-screen-md mx-auto text-center pt-2">
+            <header>
+              <a href="/">
+                Home
+              </a>
+              <a href="/about">
+                About
+              </a>
+            </header>
+            <div>
+              {{ content | safe }}
+            </div>
+      </div>
   </body>
 </html>
