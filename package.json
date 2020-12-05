@@ -4,16 +4,24 @@
   "description": "They make use of Server-side rendering: (build time) to make the pages before hand.",
   "main": "vibe.js",
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve"
+    "build": "npm-run-all build:css build:html",
+    "build:css": "postcss src/css/tailwind.css -o src/css/styles.css",
+    "build:html": "eleventy",
+    "watch": "npm-run-all --parallel watch:css watch:html",
+    "watch:css": "postcss src/css/tailwind.css -o src/css/styles.css --watch",
+    "watch:html": "eleventy --serve"
   },
   "keywords": [],
   "author": "Peter T",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^10.0.4",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"
   }
 }
