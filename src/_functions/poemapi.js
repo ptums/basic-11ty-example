@@ -8,6 +8,6 @@ exports.handler = async function(event, context, callback) {
   console.log(response.data[0].lines)
   callback(null, {
     statusCode: 200,
-    body: response.data[0].lines
+    body: 'test'
   });
 }
