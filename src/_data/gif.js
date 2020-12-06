@@ -20,7 +20,6 @@ module.exports = async function() {
   var messageGif = messages.map(getGif)
   
   return Promise.all(messageGif).then(gifObj => {
-    console.log(gifObj.gif)
     return [].concat.apply([], gifObj)
   })  
 }

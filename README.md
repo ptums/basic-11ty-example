@@ -57,3 +57,15 @@ Universal Content || Localization || Targeted || Personalized Content
 
 ## Client Side Rendering
 
+* Multiple APIs calls
+* Browswer APIs
+* Serverless APIs
+
+### Progressive Enhancement
+
+1. Decide on what is critical to the experience
+2. Deliver as much as possible using a little as possible
+3. Detect supported features and enahnce where possible
+
+
+
