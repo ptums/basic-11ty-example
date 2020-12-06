@@ -1,8 +1,8 @@
 const axios = require('axios')
 
 exports.handler = async function(event, context, callback) {
-  console.log(event.queryStringParameters) 
-  const term = event.queryStringParameters
+  const term = event.queryStringParameters.term
+  console.log(term)
 
   const response = await axios.get(`https://poetrydb.org/lines/${term}`)
 
