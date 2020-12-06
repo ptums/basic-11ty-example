@@ -5,9 +5,9 @@ exports.handler = async function(event, context, callback) {
   console.log(term)
 
   const response = await axios.get(`https://poetrydb.org/lines/${term}`)
-  console.log(response.data[0].lines)
+  console.log(response.data[0].lines.join())
   callback(null, {
     statusCode: 200,
-    body: 'test'
+    body: response.data[0].lines.join()
   });
 }
