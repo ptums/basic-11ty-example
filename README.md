@@ -52,4 +52,8 @@ Universal Content || Localization || Targeted || Personalized Content
 3. Generate our CDN config
 
 
-Left off: https://youtu.be/A_l0qrPUJds?t=8715
+(Again) Fast and secure sites and apps, delivered by pre-rendered files and serving them directly from a CDN. Removing, the requirements to manage or run a web server.
+
+
+## Client Side Rendering
+
