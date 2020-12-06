@@ -32,3 +32,22 @@ Data Sources => Build Time (pulls data from the source and integrates into the p
 2. Request data from an API
 3. Get data in Dev and in our deployments
 
+Data Source => Templates => Pages are built (Templates + Data) => Pages are sent to CDN => Content on CDN => User
+
+## Personalization
+
+Static Site Generator => Applies structured data to templates in order to create views and assets
+
+<-------------------------------------------------------------------->
+Universal Content || Localization || Targeted || Personalized Content
+
+### Enablers
+
+* Automation
+* Tools & Services
+* The API Economy
+
+1. Generate views for many locales
+2. Route traffic at the CDN
+3. Generate our CDN config
+

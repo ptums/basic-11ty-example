@@ -1,9 +1,14 @@
 ---
-title: Pulling love giphs
+title: A gif for the message
 layout: base.njk
+pagination:
+  data: gif
+  size: 1
+  alias: gif
+permalink: /{{gif.message}}/surprise.html
 ---
 
 <div class="my-6">
-  <h1 class="text-3xl font-extrabold">Surprise!!</h1>
-    <img src="{{ surprise }}" alt="random gif" class="mx-auto block my-8" />
+  <h1 class="text-3xl font-extrabold">{{gif.message}} !!</h1>
+  <img src="{{ gif.url }}" alt="{{gif.message}} gif" class="mx-auto block my-8" />
 </div>

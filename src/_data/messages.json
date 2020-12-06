@@ -1,20 +1,9 @@
 [
-  {
-    "message": "my sunshines"
-  },
-  {
-    "message": "my family"
-  },
-  {
-    "message": "my joy"
-  },
-  {
-    "message": "my loves"
-  },
-  {
-    "message": "my life"
-  },
-  {
-    "message":  "my light"
-  }
+  "sunshines",
+  "family",
+  "joy",
+  "loves",
+  "life",
+  "light",
+  "tacos"
 ]
