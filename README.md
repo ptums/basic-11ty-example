@@ -67,5 +67,11 @@ Universal Content || Localization || Targeted || Personalized Content
 2. Deliver as much as possible using a little as possible
 3. Detect supported features and enahnce where possible
 
+## Going from monolith to JAMstack
+
+"Let's not try to boil the ocean"
+
+
+
 
 
