@@ -51,3 +51,5 @@ Universal Content || Localization || Targeted || Personalized Content
 2. Route traffic at the CDN
 3. Generate our CDN config
 
+
+Left off: https://youtu.be/A_l0qrPUJds?t=8715
