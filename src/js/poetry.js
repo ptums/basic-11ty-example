@@ -1,10 +1,7 @@
 (function() {
   
   const term = location.pathname.split('/').filter(a => a !== "")[0]
-  console.log(`%c term: ${term}`, 'color: green; font-size: 22px;')
-  console.log('^^ is this formatted properly')
-  console.log(`%c request url: /.netlify/functions/poemapi?term=${term.trim()}`,  'color: red; font-size: 32px;')
-  fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
+  fetch(`https://rachelandmarssite.netlify.app/.netlify/functions/poemapi?term=${term.trim()}`)
   .then(response => {
     return response.json()
   })
