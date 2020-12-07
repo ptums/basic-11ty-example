@@ -3,7 +3,8 @@
   const term = location.pathname.split('/').filter(a => a !== "")[0]
   console.log(`%c term: ${term}`, 'color: green; font-size: 22px;')
   console.log('^^ is this formatted properly')
-  fetch(`/.netlify/functions/poemapi?term=${term}`)
+  console.log(`%c request url: /.netlify/functions/poemapi?term=${term.trim()}`,  'color: red; font-size: 32px;')
+  fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
   .then(response => response.json())
   .then(data => {
     const poemElm = document.getElementById('poem')
