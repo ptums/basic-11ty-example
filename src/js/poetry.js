@@ -1,21 +1,16 @@
-(function() {
-  
+(function() {  
   const term = location.pathname.split('/').filter(a => a !== "")[0]
+
   fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
   .then(response => {
     return response.json()
   })
-  .then(data => {    
-    console.log(`%c response`,'color: orange; font-size: 32px')
-    console.log(data)
+  .then(res => {    
+    const poemElm = document.getElementById('poem')
+    if(res.data) {
+      poemElm.innerHTML = res.data
+    }else {
+      poemElm.innerHTML = `Sorry, there aren't any poems about ${term}.`
+    }
   })
-  // .then(data => {
-  //   const poemElm = document.getElementById('poem')
-  //   console.log(data)
-  //   // if(data) {
-  //   //   poemElm.innerHTML = data
-  //   // }else {
-  //   //   poemElm.innerHTML = `Sorry, there aren't any poems about ${term}.`
-  //   // }
-  // });
 })()
