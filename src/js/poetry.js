@@ -5,8 +5,9 @@
   console.log('^^ is this formatted properly')
   console.log(`%c request url: /.netlify/functions/poemapi?term=${term.trim()}`,  'color: red; font-size: 32px;')
   fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
-  .then(response => {
-    console.log(response)
+  .then(response => response)
+  .then(data => {
+    console.log(data)
   })
   // .then(data => {
   //   const poemElm = document.getElementById('poem')
