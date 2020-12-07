@@ -1,7 +1,7 @@
 (function() {
   
   const term = location.pathname.split('/').filter(a => a !== "")[0]
-  fetch(`/.netlify/functions/poemsapi?term=${term}`)
+  fetch(`/.netlify/functions/poemapi?term=${term}`)
   .then(response => response.json())
   .then(data => {
     const poemElm = document.getElementById('poem')
