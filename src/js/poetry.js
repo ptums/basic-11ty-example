@@ -5,7 +5,10 @@
   console.log('^^ is this formatted properly')
   console.log(`%c request url: /.netlify/functions/poemapi?term=${term.trim()}`,  'color: red; font-size: 32px;')
   fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
-  .then(response => response)
+  .then(response => {
+    console.log(response.json())
+    return response
+  })
   .then(data => {
     console.log(`%c data: ${JSON.stringify(data)}`,'color: orange; font-size: 32px')
   })
