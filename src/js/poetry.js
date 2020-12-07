@@ -7,7 +7,7 @@
   fetch(`/.netlify/functions/poemapi?term=${term.trim()}`)
   .then(response => response)
   .then(data => {
-    console.log(`%c data: ${data}`,'color: orange; font-size: 32px')
+    console.log(`%c data: ${JSON.stringify(data)}`,'color: orange; font-size: 32px')
   })
   // .then(data => {
   //   const poemElm = document.getElementById('poem')
