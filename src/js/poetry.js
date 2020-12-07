@@ -6,10 +6,10 @@
   .then(data => {
     const poemElm = document.getElementById('poem')
     console.log(data)
-    if(data) {
-      poemElm.innerHTML = data
-    }else {
-      poemElm.innerHTML = `Sorry, there aren't any poems about ${term}.`
-    }
+    // if(data) {
+    //   poemElm.innerHTML = data
+    // }else {
+    //   poemElm.innerHTML = `Sorry, there aren't any poems about ${term}.`
+    // }
   });
 })()
